@@ -1,23 +1,23 @@
 #include<stdio.h>
 int main()
 {
-    int n,temp,rev=0;
+    int d,n,temp,sum=0;
     printf("Enter a number:");
     scanf("%d",&n);
     temp==n;
     while(n>0)
     {
         d=n%10;
-        rev=rev*10+d;
+        sum=sum+d*d*d;
         n=n/10;
     }
-    if(rev==temp)
+    if(sum==temp)
     {
-        printf("The given number is a palindrome.");
+        printf("The given number is an Armstrong number.");
     }
     else
     {
-        printf("The given number is not a palindrome.");
+        printf("The given number is not an Armstrong number.");
     }
     return 0;
 }
